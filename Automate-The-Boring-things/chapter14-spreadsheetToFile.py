@@ -13,7 +13,7 @@ def cellToText(sheet):
             file.write(sheet[columnLetter + str(y)].value)
             
         file.close()
-workbookToUse = input("What workbook do you wanna use: ")
+workbookToUse = input("Input Workbook: ")
 derivedWorkBook = loadWorkbook(workbookToUse +".xlsx")
 cellToText(derivedWorkBook)
 #Doesn't run past the first iteration... Future me it's your job to fix it
